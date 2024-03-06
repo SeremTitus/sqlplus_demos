@@ -1,3 +1,4 @@
+SET SERVEROUTPUT ON;
 DECLARE
   pi CONSTANT NUMBER(10, 4) := 3.14159265;
   r NUMBER := 7;
@@ -12,3 +13,4 @@ BEGIN
   dbms_output.put_line('Circumference: ' || circumference);
   dbms_output.put_line('Area: ' || area);
 END;
+/

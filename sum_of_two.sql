@@ -1,8 +1,12 @@
+SET SERVEROUTPUT ON;
 DECLARE
-  num1 NUMBER := 5;
-  num2 NUMBER := 10;
-  sum NUMBER;
+  v_sum NUMBER;
+  num1 NUMBER := 10;
+  num2 NUMBER := 5;
 BEGIN
-  sum := num1 + num2;
-  dbms_output.put_line('The sum of ' || num1 || ' and ' || num2 || ' is: ' || sum);
+  v_sum := num1 + num2;
+  dbms_output.put_line('num 1: ' || num1);
+  dbms_output.put_line('num 2: ' || num2);
+  dbms_output.put_line('sum: ' || v_sum);
 END;
+/
